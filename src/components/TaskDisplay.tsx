@@ -12,9 +12,8 @@ export default function TaskDisplay ({
 }: TaskDisplayProps): JSX.Element {
   return (
         <div className='todo-box'>
-            <ul>
-                {tasks.map((task) => (
 
+                {tasks.map((task) => (
                         <Task
                             key={Math.random()}
                             handleTaskChangeAction={handleTaskChangeAction}
@@ -22,7 +21,7 @@ export default function TaskDisplay ({
                         />
 
                 ))}
-            </ul>
+
         </div>
   )
 }

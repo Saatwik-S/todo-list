@@ -13,9 +13,9 @@ export default function Task ({
   }
 
   return (
-        <li className='todo-item'>
+        <div className='todo-item'>
             <p>{task}</p>
             <button onClick={handleDeleteTask}>DELETE</button>
-        </li>
+        </div>
   )
 }
